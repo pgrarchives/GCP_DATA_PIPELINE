@@ -109,10 +109,44 @@ Analysis of the noise complaint data reveals that:
 - Residential noise is the leading type of complaint.
 - Brooklyn has the highest number of complaints.
 - Loud music and parties are the most common complaint reasons.
+- Noise Complaints related to the house of worship were resolved quickly compared to other Noise Complaints.
 
 ![image](https://github.com/pgrarchives/GCP_DATA_PIPELINE/assets/112724112/60e534d4-9319-45cc-9e9a-8ffc8a0e8109)
 
 ## Project Setup
 
 Instructions for setting up and running the project:
+
+To ensure that the analysis conducted on the NYC 311 Noise Complaint dataset can be reproduced, follow these steps:
+
+1. **Set Up Google Cloud Platform (GCP) Account and Service Keys**
+   - Create a GCP account at [Google Cloud Platform](https://cloud.google.com/).
+   - Navigate to the IAM & Admin page to create a new service account.
+   - Assign the necessary roles and download the service account key as a JSON file.
+   - Place the downloaded key in a secure folder within your project directory.
+
+2. **Configure GCP Services**
+   - In the GCP Console, set up Google Cloud Storage by creating new storage buckets.
+   - Create a BigQuery dataset for storing processed data.
+   - Deploy a Dataproc cluster to handle data transformation using PySpark.
+
+3. **Data Ingestion and Storage**
+   - Deploy Cloud Functions to ingest data from the NYC dataset API.
+   - Configure Cloud Pub/Sub to manage the flow of data into Cloud Storage.
+
+4. **Data Processing**
+   - Use the deployed Dataproc cluster to run PySpark jobs for data transformation.
+   - Ensure that transformed data is loaded into the BigQuery dataset for analysis.
+
+5. **Scheduling and Automation**
+   - Utilize Cloud Scheduler to automate the data ingestion and processing pipeline.
+   - Set up cron jobs to trigger the Cloud Functions at regular intervals.
+
+6. **Analytics and Visualization**
+   - Execute analytical queries on the BigQuery platform to derive insights from the data.
+   - Connect Looker Studio to the BigQuery datasets and create visualizations and dashboards.
+
+7. **Access Project Results**
+   - The output of the analysis can be viewed in Looker Studio dashboards.
+
 

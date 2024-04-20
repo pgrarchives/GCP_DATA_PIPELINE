@@ -6,6 +6,10 @@ This project analyzes the NYC 311 noise complaint data to derive actionable insi
 ## Problem Statement
 The project aims to understand the distribution and frequency of noise complaints across NYC's boroughs, identifying hotspots for noise pollution and characterizing the nature of complaints.
 
+- **Improve Data Quality**: Enhance the accuracy and consistency of the data.
+- **Efficient Data Storage and Retrieval**: Implement scalable data storage solutions and optimize data access.
+- **Insightful Data Analysis**: Provide analytical capabilities to uncover trends and patterns in noise complaints across different times and regions.
+
 ## Data Description
 The dataset contains millions of 311 service request records from 2010 to the present. It includes detailed information like request IDs, timestamps, agency details, and complaint types. This analysis focuses on noise complaints, which are a major component of the dataset.
 

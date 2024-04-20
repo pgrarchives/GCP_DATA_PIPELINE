@@ -13,7 +13,6 @@ The project aims to understand the distribution and frequency of noise complaint
 ## Data Description
 The dataset contains millions of 311 service request records from 2010 to the present. It includes detailed information like request IDs, timestamps, agency details, and complaint types. This analysis focuses on noise complaints, which are a major component of the dataset.
 
-# Data Fields Description
 Each record in the NYC 311 Noise Complaint dataset is composed of various fields that document the specifics of each complaint. The following are the detailed description of these fields used for analysis in this project: 
 
 - **Unique Key**: A large integer value serving as a unique identifier for every noise complaint record. This ensures each complaint is individually traceable.
